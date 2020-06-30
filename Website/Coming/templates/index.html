@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>New Age - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="{% static 'device-mockups/device-mockups.min.css' %}">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/new-age.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" style="color:black" >Keggery</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" style="color:black" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" style="color:black" href="#howItWorks">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" style="color:black" href="#calltoaction">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-5">The home pub experience!</h1>
+            <a href="#calltoaction" class="btn btn-outline btn-xl js-scroll-trigger">Email us!</a>
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <div class="device-container">
+
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img src="{% static 'img/BarrelMain.jpeg' %}" style="max-width:150%; max-height:150%;" class="img-fluid" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!-- About Section-->
+  <a name="about"></a>
+  <section class="page-section text-white mb-0" id="about" style="background-color:black">
+      <div class="container">
+          <!-- About Section Heading-->
+          <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+          <!-- Icon Divider-->
+          <div class="divider-custom divider-light">
+              <div class="divider-custom-line"></div>
+              <div class="divider-custom-line"></div>
+          </div>
+          <!-- About Section Content-->
+          <div class="row">
+              <div class="mr-auto"><p class="lead">We love beer. We love pubs. Yet, we can’t always go to our favourite establishment for a drink.</p></div>
+              <div class="mr-auto"><p class="lead">Following the craft revolution, the beer selection is better than ever. Yet cans and bottles don’t beat a fresh pint.</p></div>
+              <div class="mr-auto"><p class="lead">There are some great home beer dispensers. Yet, they are usually owned by macro breweries only offering their mass-market beers. </p></div>
+              <div class="mr-auto"><p class="lead">Some independent breweries offer mini-kegs with nozzles for taps. Yet the beer only lasts about 2-3 days.</p></div>
+              <div class="mr-auto"><p class="lead">No more mass-market beers. No more heavy kegs. No more bottles and cans. </p></div>
+              <div class="mr-auto"><p class="lead">Want kegs that last 30 days? Want your favourite craft beer on tap? Want some beer-tech to be proud of?</p></div>
+              <div class="mr-auto"><p class="lead">Want your favourite craft beer on tap? Want kegs that last 30 days? Want some beer-tech to be proud of?</p></div>
+
+          </div>
+          <!-- About Section Button-->
+          <div class="text-center mt-4">
+              <a class="btn btn-xl btn-outline-light" href="#calltoaction">
+                  <i class="fas fa-download mr-2"></i>
+                  Join Us
+              </a>
+          </div>
+      </div>
+  </section>
+  <a name="howItWorks"></a>
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2>How it works</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 my-auto">
+              <div class="device">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img src="{% static 'img/Keggery_LOGO_A7.png' %}" class="img-fluid" style="max-width:150%; max-height:150%;"  alt="">
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-7 my-auto">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="text-primary"></i><img src="{% static 'img/tap.png' %}" class="img-fluid" style="max-width:150%; max-height:150%;"  alt="">
+                  <h3>Dispenser</h3>
+                  <p class="text-muted">Get your hands on our dispenser or use any existing beer tap system that fits a standard keg.</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="text-primary"></i>
+                  <i class="text-primary"></i><img src="{% static 'img/ke.png' %}" class="img-fluid" style="max-width:150%; max-height:150%;"  alt="">
+                  <h3>Kegs</h3>
+                  <p class="text-muted">Choose a keg to be delivered from our selection of craft beers.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="text-primary"></i><img src="{% static 'img/beers.png' %}" class="img-fluid" style="max-width:150%; max-height:150%;"  alt="">
+                  <i class="text-primary"></i>
+                  <h3>Beers</h3>
+                  <p class="text-muted">Kick-back and relax with a pub quality draught beers.</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="text-primary"></i>
+                  <i class="text-primary"></i><img src="{% static 'img/returns.png' %}" class="img-fluid" style="max-width:150%; max-height:150%;"  alt="">
+
+                  <h3>Recycle</h3>
+                  <p class="text-muted">Send your Keg back and get £5 off your next order.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <a name="calltoaction"></a>
+  <section class="call-to-action text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-4" style="color:black">We'd love you to join us on this journey!</h2>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email to stay in touch">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-content">
+      <div class="container">
+        <h2>Want to have your say on how we build this?</h2>
+        <a href="https://docs.google.com/forms/d/18MbtlTYPV6VuoCkfVZ6QeFlI3oKkW1aR8yQUZbDPmSs/edit" class="btn btn-outline btn-xl js-scroll-trigger">Take this survey.</a>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; Your Website 2020. All Rights Reserved by Keggery.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/Keggery-102906888136833">Facebook</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://twitter.com/KeggeryBeer">Twitter</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/keggerybeer/">Instagram</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/new-age.min.js' %}"></script>
+
+</body>
+
+</html>
