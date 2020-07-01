@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'ec2-13-59-76-205.us-east-2.compute.amazonaws.com',
     '127.0.0.1',
-    '3.14.64.148',
+    '3.18.117.61',
     'www.keggery.co.uk',
     'ec2-3-14-64-148.us-east-2.compute.amazonaws.com'
     ]
