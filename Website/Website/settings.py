@@ -30,7 +30,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '3.18.117.61',
     'www.keggery.co.uk',
-    'keggery.co',
+    'www.keggery.co',
     'ec2-3-14-64-148.us-east-2.compute.amazonaws.com'
     ]
 
