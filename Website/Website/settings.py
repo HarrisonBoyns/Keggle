@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [
     '3.18.117.61',
     'www.keggery.co.uk',
     'www.keggery.co',
+    'keggery.co.uk'
     'ec2-3-14-64-148.us-east-2.compute.amazonaws.com'
     ]
 
@@ -125,4 +126,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "website/static/")
+STATIC_ROOT = os.path.join(BASE_DIR, "Coming/static/")
