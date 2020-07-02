@@ -31,7 +31,8 @@ ALLOWED_HOSTS = [
     '3.18.117.61',
     'www.keggery.co.uk',
     'www.keggery.co',
-    'keggery.co.uk'
+    'keggery.co.uk',
+    'keggery.co'
     'ec2-3-14-64-148.us-east-2.compute.amazonaws.com'
     ]
 
