@@ -127,3 +127,4 @@ USE_TZ = True
 
 STATIC_URL = 'Coming/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "Coming/static/")
+print(STATIC_ROOT)
