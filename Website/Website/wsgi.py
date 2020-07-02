@@ -25,3 +25,6 @@ if settings.DEBUG:
     application = StaticFilesHandler(get_wsgi_application())
 else:
     application = get_wsgi_application()
+
+
+    
