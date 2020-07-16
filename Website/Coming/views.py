@@ -3,7 +3,10 @@ from django.http import HttpResponse, BadHeaderError
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from .forms import ServerForm
+import os
 
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
 
 # Create your views here.
 
@@ -16,11 +19,21 @@ def coming(request):
         form = ServerForm(request.POST)
         if form.is_valid():
             subject = 'Important'
-            message = form.cleaned_data['email']
+            email = form.cleaned_data['email']
+            message =Mail(
+                from_email=EMAIL_HOST_USER,
+                to_emails='admin@learnhack.co.uk',
+                subject=email,
+                html_content='<strong>and easy to do anywhere, even with Python</strong>')
+
             try:
-                send_mail(subject, message, EMAIL_HOST_USER, ['admin@learnhack.co.uk'], fail_silently=False)
+                sg = SendGridAPIClient(os.environ.get('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'))
+                sg.send(message)
+                # send_mail(subject, message, EMAIL_HOST_USER, ['admin@learnhack.co.uk'], fail_silently=False)
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
+            except Exception as e:
+                print(e.message)
             return render(request, "index.html", {'form': form})
     return render(request, "index.html", {'form': form})
 
