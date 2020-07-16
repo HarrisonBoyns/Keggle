@@ -27,14 +27,19 @@ def coming(request):
                 html_content='<strong>and easy to do anywhere, even with Python</strong>')
 
             try:
-                print(os.environ.get('SENDGRID_API_KEY'))
-                sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
-                sg.send(message)
+                # certificate = (os.environ.get('SENDGRID_API_KEY'))
+                # sg = SendGridAPIClient(certificate)
+                # sg.send(message)
+                subject = 'Thank you for registering to our site'
+                message = ' it  means a world to us '
+                email_from = EMAIL_HOST_USER
+                recipient_list = ['admin@learnhack.co.uk', ]
+                send_mail(subject, message, email_from, recipient_list)
                 # send_mail('Important', 'Here is the message.', 'hitmebaby654321@gmail.com', ['admin@learnhack.co.uk'],
                 #           fail_silently=False)
-
+                print('Working')
             except Exception as e:
-                print(e.body)
+                print(e)
             return render(request, "index.html", {'form': form})
     return render(request, "index.html", {'form': form})
 
