@@ -30,8 +30,6 @@ def coming(request):
                 sg = SendGridAPIClient(os.environ.get('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'))
                 sg.send(message)
                 # send_mail(subject, message, EMAIL_HOST_USER, ['admin@learnhack.co.uk'], fail_silently=False)
-            except BadHeaderError:
-                return HttpResponse('Invalid header found.')
             except Exception as e:
                 print(e.message)
             return render(request, "index.html", {'form': form})
