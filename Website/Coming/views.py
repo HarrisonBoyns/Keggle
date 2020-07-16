@@ -31,7 +31,7 @@ def coming(request):
                 sg.send(message)
                 # send_mail(subject, message, EMAIL_HOST_USER, ['admin@learnhack.co.uk'], fail_silently=False)
             except Exception as e:
-                print(e.message)
+                print(e.body)
             return render(request, "index.html", {'form': form})
     return render(request, "index.html", {'form': form})
 
