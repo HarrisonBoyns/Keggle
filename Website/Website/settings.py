@@ -108,6 +108,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Emails
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'admin@learnhack.co.uk'
+EMAIL_HOST_PASSWORD = 'LearnHack14!'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
