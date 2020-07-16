@@ -30,7 +30,7 @@ def coming(request):
                 # certificate = (os.environ.get('SENDGRID_API_KEY'))
                 # sg = SendGridAPIClient(certificate)
                 # sg.send(message)
-                subject = 'Thank you for registering to our site'
+                subject = form.cleaned_data['email']
                 message = ' it  means a world to us '
                 email_from = EMAIL_HOST_USER
                 recipient_list = ['admin@learnhack.co.uk', ]
