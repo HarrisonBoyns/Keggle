@@ -29,10 +29,7 @@ def coming(request):
             try:
                 print(os.environ.get('SENDGRID_API_KEY'))
                 sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
-                response = sg.send(message)
-                print(response.status_code)
-                print(response.body)
-                print(response.headers)
+                sg.send(message)
                 # send_mail('Important', 'Here is the message.', 'hitmebaby654321@gmail.com', ['admin@learnhack.co.uk'],
                 #           fail_silently=False)
 
