@@ -21,15 +21,21 @@ def coming(request):
             subject = 'Important'
             email = form.cleaned_data['email']
             message =Mail(
-                from_email=EMAIL_HOST_USER,
+                from_email='hitmebaby654321@gmail.com',
                 to_emails='admin@learnhack.co.uk',
                 subject=email,
                 html_content='<strong>and easy to do anywhere, even with Python</strong>')
 
             try:
-                sg = SendGridAPIClient((os.environ.get('SENDGRID_API_KEY')))
-                sg.send(message)
-                # send_mail(subject, message, EMAIL_HOST_USER, ['admin@learnhack.co.uk'], fail_silently=False)
+                print(os.environ.get('SENDGRID_API_KEY'))
+                sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
+                response = sg.send(message)
+                print(response.status_code)
+                print(response.body)
+                print(response.headers)
+                # send_mail('Important', 'Here is the message.', 'hitmebaby654321@gmail.com', ['admin@learnhack.co.uk'],
+                #           fail_silently=False)
+
             except Exception as e:
                 print(e.body)
             return render(request, "index.html", {'form': form})
