@@ -33,7 +33,7 @@ def coming(request):
                 subject = form.cleaned_data['email']
                 message = ' it  means a world to us '
                 email_from = EMAIL_HOST_USER
-                recipient_list = ['admin@learnhack.co.uk', ]
+                recipient_list = ['nicholas.jackson.brauer@gmail.com', ]
                 send_mail(subject, message, email_from, recipient_list)
                 # send_mail('Important', 'Here is the message.', 'hitmebaby654321@gmail.com', ['admin@learnhack.co.uk'],
                 #           fail_silently=False)
